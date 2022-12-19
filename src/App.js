@@ -43,7 +43,7 @@ export default function App() {
       userId: 11,
       id: 11,
       title: "User Msg",
-      body: userChat
+      body: userChat,
     };
 
     let newArr = await [...posts, newChat];
@@ -57,13 +57,15 @@ export default function App() {
         <div className="header">
           <img
             alt="pp"
-            style={{ borderRadius: "50px" }}
-            height="50px"
-            width="50px"
+            style={{ borderRadius: "50px", paddingLeft: "10px" }}
+            height="35px"
+            width="35px"
             src="https://lh3.googleusercontent.com/ogw/AOh-ky2dSvzfUaoSVKl1BYN8aIRV7aJKL1fVM5i3Pr6UqaU=s32-c-mo"
           />
           <span style={{ fontSize: "30px" }}>Vinod</span>
-          <span style={{ fontSize: "50px" }}>&#9993;</span>
+          <span style={{ fontSize: "50px", paddingRight: "10px" }}>
+            &#9993;
+          </span>
         </div>
         <div className="msgBody">
           {posts ? (
